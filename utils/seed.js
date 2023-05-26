@@ -21,6 +21,7 @@ connection.once('open', async () => {
       first,
       last,
       age: Math.floor(Math.random() * (99 - 18 + 1) + 18),
+      username: first + Math.floor(Math.random() * 1000 ),
     });
   }
 
