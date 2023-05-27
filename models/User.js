@@ -5,8 +5,22 @@ const userSchema = new Schema(
   {
     first: String,
     last: String,
+    friends: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
+      },
+    ],
     age: Number,
     username: String,
+    email: String,
+    thoughts: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: 'Thought',
+      },
+    ],
+    
     applications: [
       {
         type: Schema.Types.ObjectId,

@@ -19,9 +19,11 @@ connection.once('open', async () => {
 
     users.push({
       first,
-      last,
+      last,  
       age: Math.floor(Math.random() * (99 - 18 + 1) + 18),
       username: first + Math.floor(Math.random() * 1000 ),
+      email: "abc@example.com",
+       
     });
   }
 
